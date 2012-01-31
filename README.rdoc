@@ -9,3 +9,4 @@ To run it on a local machine, simple run <b>rackup</b> (WEBrick) command or <b>s
 * Multi-language support (by reading different yml files and templates)
 * HTML5 layout
 * Tags for jobs
+* PDF export (PDFKit or Prawn, haven't decided yet)

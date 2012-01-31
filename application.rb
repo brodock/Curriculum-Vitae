@@ -1,7 +1,12 @@
 # -*- encoding : utf-8 -*-
 class CurriculumApp < Sinatra::Base  
   before do
-    @person = OpenStruct.new(Psych.load(File.read("db/curriculum.yml"))['person'])
+    if defined? Psych
+      @person = OpenStruct.new(Psych.load(File.read("db/curriculum.yml"))['person'])
+    else
+      @person = OpenStruct.new(YAML.load(File.read("db/curriculum.yml"))['person'])
+    end
+    
     @person.address = OpenStruct.new(@person.address)
     @person.skills.map!{ |skill| OpenStruct.new(skill) }
     @person.education.map!{ |edu| OpenStruct.new(edu) }
