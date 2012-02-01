@@ -3,8 +3,9 @@
   margin-bottom: 0;
 }
 a#pdf {
-  display: none;
+  display: none !important;
 }
+#hd h1, #hd h2 {letter-spacing: normal !important;}
 .job p, 
 .education p, 
 .congress p { page-break-inside: avoid; }
