@@ -2,6 +2,11 @@
 This is a Sinatra application used to generate my personal Curriculum Vitae.
 It uses a template originally designed by Matt Brown (http://thingsthatarebrown.com), downloaded from http://sampleresumetemplate.net with some modifications.
 
+== Installation
+Run <b>bundle install</b> to install required gems. You will also need to install <b>wkhtmltopdf</b>:
+* Install by hand (recommended): https://github.com/jdpace/PDFKit/wiki/Installing-WKHTMLTOPDF
+* Rubygems: gem install wkhtmltopdf-binary
+
 == Running
 To run it on a local machine, simple run <b>rackup</b> (WEBrick) command, <b>passenger</b> (nginx), <b>shotgun</b> (Thin), the last one requires you to install <b>shotgun</b> gem first.
 

@@ -22,6 +22,7 @@ GEM
     net-ssh (2.7.0)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
+    pdfkit (0.5.4)
     puma (2.7.1)
       rack (>= 1.1, < 2.0)
     r18n-core (1.1.8)
@@ -42,6 +43,7 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano (~> 2.15)
+  pdfkit
   puma
   sinatra
   sinatra-r18n
