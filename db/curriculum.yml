@@ -16,6 +16,15 @@ person:
     -
       title: Sysadmin
       description: "deployment, system monitoring, tunning, cloud provisioning, linux"
+  technologies:
+    - PHP
+    - Ruby on Rails
+    - MySQL
+    - jQuery
+    - Linux
+    - Objective-C
+    - HTML5
+    - CSS3  
   education:
     -
       degree: "Bachelor's of Computer Information Systems"
@@ -42,6 +51,17 @@ person:
         - "They are now able to provide their clients with analytical reports generated almost in realtime."
         - "As they now run Ruby on Rails 3.1 with Ruby 1.9.3, they benefit from every single inovation and speed gains of both of them."
         - "Localization was also a game change, as they are expanding their activities to attract international clients and finally a mobile version is on test soon to be deployed"
+      tags:
+        - Ruby on Rails
+        - MongoDB
+        - MySQL
+        - Git
+        - Javascript
+        - jQuery
+        - Solr
+        - CAS
+        - jQueryMobile
+        - Linux
     -
       organization: Federal University of Santa Catarina (UFSC)
       title: Co-OP
@@ -50,6 +70,18 @@ person:
         - "Web development for the Distance Learning Environment (Moodle based) and developing, managing the institutional CMS that powers the university main website and many sub­portals."
         - "I was on the institutional CMS project from the beginning, helping to plan the whole project from sizing computational resources, planning deployment, planning migrations and training the first key users."
         - "Also responsible for managing some backend solutions used by the development team: Gitorious, Redmine."
+      tags:
+        - PHP
+        - Ruby on Rails
+        - Linux
+        - Wordpress
+        - Memcached
+        - Moodle
+        - Ubuntu
+        - MySQL
+        - Sybase
+        - SOAP
+        - Solaris
     -
       organization: Wplex Software
       title: Co-OP
@@ -58,10 +90,50 @@ person:
         - "Development of components to their web based ITS (Inteligent Transportation System) solution, development and manangement of the corporate website, powered by a Wordpress solution."
         - "Periodically mananging their in­house datacenter network equipments and servers. Deploying new Linux installations, upgrading existing ones and managing existing internal development tools."
         - "Responsible for CVS repositories migration to SVN solution."
+      tags:
+        - PHP
+        - Java
+        - JSP
+        - JSF
+        - jQuery
+        - Google Maps
+        - jBoss
+        - SVN
+        - CVS
+        - Ubuntu
     -
       organization: Modelo Comunicação
       title: Contract
       time_frame: November 2006 - March 2007
       description:
         - "Web development for a big brazilian website linked against MSN Brasil, deployment of OpenAds (now OpenX) to provide Ads control and billing, improvements to the frontend and backend's admin solution."
+      tags:
+        - PHP
+        - MySQL
+        - Linux
+  congresses:
+    -
+      date_year: 2011
+      name: "6º Congresso Catarinense de Software Livre (SoLiSC)"
+      location: "Florianópolis, SC"
+    -
+      date_year: 2010
+      name: RubyConf Brasil
+      location: "São Paulo, SP"
+    -
+      date_year: 2009
+      name: 8th International Information and Telecommunication Technologies Symposium (I2TS)
+      location: "Florianópolis, SC"
+    - 
+      date_year: 2009
+      name: 4º Congresso Catarinense de Software Livre (SoLiSC)
+      location: "Florianópolis, SC"
+    -
+      date_year: 2008
+      name: Escola Regional de Banco de Dados (ERBD)
+      location: "Florianópolis, SC"
+    -
+      date_year: 2007
+      name: Caravana Tecnológica GuJava/SC
+      location: "Florianópolis, SC"
         

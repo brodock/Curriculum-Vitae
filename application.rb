@@ -1,11 +1,7 @@
 # -*- encoding : utf-8 -*-
 class CurriculumApp < Sinatra::Base  
   before do
-    if defined? Psych
-      @person = OpenStruct.new(Psych.load(File.read("db/curriculum.yml"))['person'])
-    else
-      @person = OpenStruct.new(YAML.load(File.read("db/curriculum.yml"))['person'])
-    end
+    @person = OpenStruct.new(YAML.load(File.read("db/curriculum.yml"))['person'])
     
     @person.address = OpenStruct.new(@person.address)
     @person.skills.map!{ |skill| OpenStruct.new(skill) }
@@ -25,9 +21,27 @@ class CurriculumApp < Sinatra::Base
     def link_to(text, url)
       "<a href=\"#{url}\">#{text}</a>"
     end
+    
+    def group_columns(num_columns, itens)
+      output = []
+      itens.each_with_index do |item, index|
+        output[(index%num_columns)] ||= []
+        output[(index%num_columns)] << item
+      end
+      output
+    end
+    
+    def group_columns_max(num_columns, itens)
+      max = itens.count/num_columns
+      max = max+1 if itens.count%num_columns != 0
+    end
   end
 
   get '/' do
-    erb :index, :locals => { :title => 'teste', :person => @person }
+    erb :index, :locals => { :title => "#{@person.name} | Curriculum Vitae", :person => @person }
+  end
+  
+  get '/curriculum' do
+    erb :index, :locals => { :title => "#{@person.name} | Curriculum Vitae", :person => @person }
   end
 end

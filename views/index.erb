@@ -37,6 +37,24 @@
               <% end %>
 						</div>
 					</div><!--// .yui-gf -->
+					
+					<div class="yui-gf">
+         		<div class="yui-u first">
+							<h2>Technologies</h2>
+						</div>
+						<div class="yui-u">
+              <% max_per_column = group_columns_max(3, person.technologies) %>
+					    <% group_columns(3, person.technologies).each do |group| %>
+  						  <ul class="talent">
+    						  <% group.each_with_index do |tech, index| %>
+    						    <li<%= ' class="last"' if (index == max_per_column-1) %>><%= tech %></li>
+    						  <% end %>
+    						</ul>
+						  <% end %>
+
+						</div>
+					</div><!--// .yui-gf-->
+          
 
 					<div class="yui-gf">
 	

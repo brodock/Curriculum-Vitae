@@ -1,7 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    psych (1.2.2)
     rack (1.4.0)
     rack-protection (1.2.0)
       rack
@@ -15,5 +14,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  psych
   sinatra
