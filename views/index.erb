@@ -10,7 +10,7 @@
 
 				<div class="yui-u">
 					<div class="contact-info">
-						<h3><a id="pdf" href="#">HTML Version</a></h3>
+						<h3><a id="pdf" href="<%= "#{base_url}/" %>">HTML Version</a></h3>
 						<h3><%= link_to person.website.sub('http://', ''), person.website %>
 						<h3><%= mail_to person.email %></h3>
 						<h3><%= person.mobile_phone %></h3>
@@ -43,11 +43,11 @@
 							<h2>Technologies</h2>
 						</div>
 						<div class="yui-u">
-              <% max_per_column = group_columns_max(3, person.technologies) %>
+              <% @max_per_column = group_columns_max(3, person.technologies) %>
 					    <% group_columns(3, person.technologies).each do |group| %>
   						  <ul class="talent">
     						  <% group.each_with_index do |tech, index| %>
-    						    <li<%= ' class="last"' if (index == max_per_column-1) %>><%= tech %></li>
+    						    <li<%= ' class="last"' if (index == @max_per_column-1) %>><%= tech %></li>
     						  <% end %>
     						</ul>
 						  <% end %>

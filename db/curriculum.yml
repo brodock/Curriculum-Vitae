@@ -17,14 +17,15 @@ person:
       title: Sysadmin
       description: "deployment, system monitoring, tunning, cloud provisioning, linux"
   technologies:
-    - PHP
+    - PHP5
     - Ruby on Rails
     - MySQL
     - jQuery
     - Linux
-    - Objective-C
     - HTML5
-    - CSS3  
+    - CSS3
+    - MongoDB
+    - Java
   education:
     -
       degree: "Bachelor's of Computer Information Systems"

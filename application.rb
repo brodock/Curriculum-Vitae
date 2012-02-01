@@ -11,6 +11,10 @@ class CurriculumApp < Sinatra::Base
   end
   
   helpers do
+    def base_url
+      @base_url ||= "#{request.env['rack.url_scheme']}://#{request.env['HTTP_HOST']}"
+    end
+      
     def mail_to(email)
       link_to email, "mailto:#{email}"
     end
@@ -35,6 +39,7 @@ class CurriculumApp < Sinatra::Base
     def group_columns_max(num_columns, itens)
       max = itens.count/num_columns
       max = max+1 if itens.count%num_columns != 0
+      max
     end
   end
 
