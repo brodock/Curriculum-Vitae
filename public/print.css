@@ -1,0 +1,7 @@
+#inner {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.job p, 
+.education p, 
+.congress p { page-break-inside: avoid; }
