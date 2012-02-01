@@ -2,6 +2,9 @@
   margin-top: 20px;
   margin-bottom: 0;
 }
+a#pdf {
+  display: none;
+}
 .job p, 
 .education p, 
 .congress p { page-break-inside: avoid; }
