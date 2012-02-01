@@ -5,8 +5,9 @@ class CurriculumApp < Sinatra::Base
     
     @person.address = OpenStruct.new(@person.address)
     @person.skills.map!{ |skill| OpenStruct.new(skill) }
-    @person.education.map!{ |edu| OpenStruct.new(edu) }
     @person.jobs.map!{ |job| OpenStruct.new(job) }
+    @person.education.map!{ |edu| OpenStruct.new(edu) }
+    @person.congresses.map!{ |con| OpenStruct.new(con) }
   end
   
   helpers do

@@ -79,19 +79,35 @@
 					</div><!--// .yui-gf -->
 
 
-					<div class="yui-gf last">
+					<div class="yui-gf">
 						<div class="yui-u first">
 							<h2>Education</h2>
-						</div>
+						</div><!--// .yui-u -->
 						<div class="yui-u">
+						  <% person.education.each do |edu| %>
 						  <div class="education">
-  						  <% person.education.each do |edu| %>
   							<h2><%= edu.institution %></h2>
   							<h3><%= edu.degree %></h3>
   							<h4><%= edu.time_frame %></h4>
-  							<% end %>
-							<div>
-						</div>
+							</div>
+							<% end %>
+						</div><!--// .yui-u -->
+					</div><!--// .yui-gf -->
+
+
+					<div class="yui-gf last">
+						<div class="yui-u first">
+							<h2>Congresses & Conferences</h2>
+						</div><!--// .yui-u -->
+						<div class="yui-u">
+						  <% person.congresses.each do |con| %>
+						  <div class="congress">
+  							<h2><%= con.name %></h2>
+  							<h3><%= con.location %></h3>
+  							<h4><%= con.date_year %></h4>
+							</div>
+							<% end %>
+						</div><!--// .yui-u -->
 					</div><!--// .yui-gf -->
 
 

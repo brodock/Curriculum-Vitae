@@ -52,8 +52,10 @@ p.enlarge span { color: #000 }
 a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
 a#pdf:hover { background: #222; }
 
-.job, .education { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
-.job h4, .education h4 { position: absolute; top: 0.35em; right: 0; font-size: 110%; font-style: italic; }
+.congress h2, .congress h3 { width: 90%; }
+.education h2, .education h3 { width: 80%; }
+.job, .education, .congress { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
+.job h4, .education h4, .congress h4 { position: absolute; top: 0.35em; right: 0; font-size: 110%; font-style: italic; }
 .job p { margin: 0.75em 0; text-align: justify; }
 .job p:last-child { margin: 0.75em 0 3em 0; }
 
