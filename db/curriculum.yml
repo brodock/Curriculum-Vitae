@@ -28,7 +28,7 @@ person:
     - Java
   education:
     -
-      degree: "Bachelor's of Computer Information Systems"
+      degree: "Bachelor of Computer Information Systems"
       institution: Federal University of Santa Catarina (UFSC)
       time_frame: 2006 - 2011
       technologies:
@@ -46,7 +46,7 @@ person:
       title: Contractor
       time_frame: January 2011 - January 2012
       description:
-        - "Complete code refactoring of the whole application, implemented CAS based centralized authentication to all related portals. All the code base was rewritten, as client had an old, unmaintainable, unlocalized, codebase originally written for Rails 1.1. It had been upgraded to Rails 2.1 with lots of technical debts."
+        - "Complete code refactoring of the whole application, implemented CAS based centralized authentication to all related portals. All the code base was rewritten, as the client had an old, unmaintainable, unlocalized, codebase originally written for Rails 1.1. It had been upgraded to Rails 2.1 with lots of technical debts."
         - "The portal was split into some small applications with focused scopes, to better build a foundation for future scalability and help maintain lean codebase."
         - "The databases was migrated from Postgres, storing relational data and analytics, to a combination of MySQL server to hold relational data and MongoDB to hold analytics, resulting in a great speed gain with orders of magnitude."
         - "They are now able to provide their clients with analytical reports generated almost in realtime."
@@ -68,9 +68,9 @@ person:
       title: Co-OP
       time_frame: September 2008 - August 2011
       description:
-        - "Web development for the Distance Learning Environment (Moodle based) and developing, managing the institutional CMS that powers the university main website and many sub­portals."
+        - "Web development for the Distance Learning Environment (Moodle based) and developing, managing the institutional CMS that powers the university's main website and many sub­portals."
         - "I was on the institutional CMS project from the beginning, helping to plan the whole project from sizing computational resources, planning deployment, planning migrations and training the first key users."
-        - "Also responsible for managing some backend solutions used by the development team: Gitorious, Redmine."
+        - "Also I was responsible for managing some backend solutions used by the development team: Gitorious, Redmine."
       tags:
         - PHP
         - Ruby on Rails
@@ -107,7 +107,7 @@ person:
       title: Contract
       time_frame: November 2006 - March 2007
       description:
-        - "Web development for a big brazilian website linked against MSN Brasil, deployment of OpenAds (now OpenX) to provide Ads control and billing, improvements to the frontend and backend's admin solution."
+        - "Web development for a big brazilian website linked to MSN Brasil, deployment of OpenAds (now OpenX) to provide Ads control and billing, improvements to the frontend and backend's admin solution."
       tags:
         - PHP
         - MySQL
