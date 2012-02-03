@@ -107,6 +107,8 @@ person:
         - SVN
         - CVS
         - Ubuntu
+        - RHEL
+        - Oracle
     -
       organization: Modelo Comunicação
       title: Contract
