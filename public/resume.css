@@ -45,6 +45,7 @@ p.enlarge span { color: #000 }
 .contact-info { margin-top: 7px; }
 .first h2 { font-style: italic; }
 .last { border-bottom: 0 }
+.tags { display: inline-block; margin: 0.5em 0.5em 0 0; padding: 3px 5px; background: #CCC; color: #fff; }
 
 
 /* //-- section styles -- */

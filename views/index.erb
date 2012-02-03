@@ -72,6 +72,9 @@
 								<% job.description.each do |paragraph| %>
 								<p><%= paragraph %></p>
 								<% end %>
+								<% job.tags.each do |tag| %>
+  							<span class="tags"><%= tag %></span>
+  							<% end %>
 							</div>
               <% end %>
 
@@ -89,6 +92,12 @@
   							<h2><%= edu.institution %></h2>
   							<h3><%= edu.degree %></h3>
   							<h4><%= edu.time_frame %></h4>
+  							<% edu.description.each do |paragraph| %>
+  							<p><%= paragraph %></p>
+  							<% end %>
+  							<% edu.technologies.each do |tech| %>
+  							<span class="tags"><%= tech %></span>
+  							<% end %>
 							</div>
 							<% end %>
 						</div><!--// .yui-u -->

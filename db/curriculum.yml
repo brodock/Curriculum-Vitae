@@ -43,6 +43,8 @@ person:
         - Database Administration
         - Linux
         - Software Engineering
+      description:
+        - "Final Thesis, consisted on a study of Ruby on Rails' Scalability and design approaches needed to solve many existing gaps."
   jobs:
     -
       organization: CIMM
