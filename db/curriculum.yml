@@ -26,6 +26,9 @@ person:
     - CSS3
     - MongoDB
     - Java
+    - Memcached
+    - Nginx
+    - Git
   education:
     -
       degree: "Bachelor of Computer Information Systems"
