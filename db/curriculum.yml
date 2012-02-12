@@ -93,8 +93,8 @@ person:
       title: Co-OP
       time_frame: March 2007 - September 2008
       description:
-        - "Development of components to their web based ITS (Inteligent Transportation System) solution, development and manangement of the corporate website, powered by a Wordpress solution."
-        - "Periodically mananging their in­house datacenter network equipments and servers. Deploying new Linux installations, upgrading existing ones and managing existing internal development tools."
+        - "Development of components to their web based ITS (Inteligent Transportation System) solution, development and management of the corporate website, powered by a Wordpress solution."
+        - "Periodically managing their in­house datacenter network equipments and servers. Deploying new Linux installations, upgrading existing ones and managing existing internal development tools."
         - "Responsible for CVS repositories migration to SVN solution."
       tags:
         - PHP
@@ -111,7 +111,7 @@ person:
         - Oracle
     -
       organization: Modelo Comunicação
-      title: Contract
+      title: Contractor
       time_frame: November 2006 - March 2007
       description:
         - "Web development for a big brazilian website linked to MSN Brasil, deployment of OpenAds (now OpenX) to provide Ads control and billing, improvements to the frontend and backend's admin solution."
