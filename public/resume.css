@@ -25,6 +25,7 @@ body { font-family: Georgia; color: #444; }
 #hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
 #hd h2 { text-transform: uppercase; letter-spacing: 2px; }
 #bd, #ft { margin-bottom: 2em; }
+#github img { position: absolute; top: 0; right: 0; border: 0; }
 
 /* //-- footer -- */
 #ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }

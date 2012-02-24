@@ -2,6 +2,9 @@
   margin-top: 20px;
   margin-bottom: 0;
 }
+#github, #github img {
+  display: none !important;
+}
 a#pdf {
   display: none !important;
 }
@@ -9,3 +12,4 @@ a#pdf {
 .job p, 
 .education p, 
 .congress p { page-break-inside: avoid; }
+
