@@ -2,7 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     r18n-core (0.4.14)
-    rack (1.4.0)
+    rack (1.4.1)
     rack-protection (1.2.0)
       rack
     shotgun (0.9)
