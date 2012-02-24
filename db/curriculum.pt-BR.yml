@@ -1,0 +1,147 @@
+person:
+  name: Gabriel Gonçalves Nunes Mazetto
+  display_name: Gabriel Mazetto
+  display_title: Desenvolvedor Web
+  email: brodock@gmail.com
+  website: http://blog.gabrielmazetto.eti.br
+  mobile_phone: +55 (48) 9126-0593
+  address:
+    city: Florianópolis
+    state: SC
+    country: Brasil
+  skills:
+    -
+      title: Desenvolvimento Web
+      description: "desenvolvimento em várias linguagens, controle de versão, BDD, alta disponibilidade, escalabilidade"
+    -
+      title: Administração de sistemas
+      description: "deployment, monitoração de sistemas, tunning, cloud provisioning, linux"
+  technologies:
+    - PHP5
+    - Ruby on Rails
+    - MySQL
+    - jQuery
+    - Linux
+    - HTML5
+    - CSS3
+    - MongoDB
+    - Java
+    - Memcached
+    - Nginx
+    - Git
+  education:
+    -
+      degree: Bacharel em Sistemas de Informação
+      institution: Universidade Federal de Santa Catarina (UFSC)
+      time_frame: 2006 - 2011
+      technologies:
+        - Java
+        - Ruby
+        - Python
+        - PHP
+        - Projetos de Banco de Dados
+        - Administração de Banco de Dados
+        - Linux
+        - Engenharia de Software
+      description:
+        - "No trabalho final de conclusão de curso (TCC), produzi um estudo de escalabilidade, focado em aplicações Ruby on Rails, bem como um levantamento de estratégias e decisões de projeto que podem ser utilizadas para solucionar boa parte dos problemas em aberto neste assunto."
+  jobs:
+    -
+      organization: CIMM
+      title: Contrato
+      time_frame: Janeiro 2011 - Janeiro 2012
+      description:
+        - "Refatoração completa da aplicação existente, implantação de solução centralizada de autenticação, utilizando CAS, para todos os portais relacionados. Toda a base de código passou por um processo de revisão e reescrita, já que o cliente possuía uma base de código legada, de dificil manuntenção, sem suporte a internacionalização, originalmente escrita para Ruby on Rails 1.1. Anteriormente a este projeto, esta base de código recebeu correções pontuais para possibilitar sua atualização até a versão 2.1 do Ruby on Rails, mas ainda assim, permaneceu com uma enorme quantidade de dívidas técnicas."
+        - "O portal foi dividido em aplicações menores, com um escopo bem definido, com a finalidade de facilitar futuras necessidades de escalabilidade e simplificar a base de código existente."
+        - "A base de dados foi migrada do PostgreSQL, que era responsável por armazenar os dados relacionais e dados analíticos, para uma combinação de servidor MySQL, destinado aos dados relacionais e MongoDB, destinado aos dados analíticos. Essa alteração resultou em um enorme ganho de performance, principalmente para a geração de relatórios baseados nos dados analíticos."
+        - "Eles agora conseguem disponibilizar relatórios baseados nos dados analíticos de acesso e interação no portal, aos seus clientes pagantes, praticamente em tempo real. A solução anterior demorava mais de 30 horas para concluir a geração de todos relatórios."
+        - "Como eles agora estão utilizando Ruby on Rails 3.1 com Ruby 1.9.3, estão se beneficiando de cada inovação e ganho de performance de ambos."
+        - "A implantação da internacionalização também está se mostrando um divisor de aguas, já que eles pretentem expandir em breve sua área de atuação para abranger clientes internacionais. Por fim, uma versão móvel já está em testes e deverá entrar em funcionamento em breve."
+      tags:
+        - Ruby on Rails
+        - MongoDB
+        - MySQL
+        - Git
+        - Javascript
+        - jQuery
+        - Solr
+        - CAS
+        - jQueryMobile
+        - Linux
+    -
+      organization: Universidade Federal de Santa Catarina (UFSC)
+      title: Estágio
+      time_frame: Setembro 2008 - Agosto 2011
+      description:
+        - "Desenvolvimento web para o ambiente de aprendizado a distância (baseado em Moodle) e desenvolvimento, implantação e manuntenção da solução de controle de conteúdos (CMS) responsavel pela maioria dos portais da universidaes, seus cursos, centros de pesquisa, etc."
+        - "Participei do projeto de reestruturaçãodos portais institucionais desde sua concepção, auxiliando no planejamento do projeto como um todo, desde o dimensionamento de recursos computacionais, planejamento da implantação, planejamento da migração dos conteúdos existentes na solução anterior, implantação de alta disponibilidade, e treinamento dos principais usuários institucionais."
+        - "Também fui responsável pela implantação e gerenciamento de soluções internas, utilizada pelos diversos times de desenvolvimento: Gitorious, Redmine."
+      tags:
+        - PHP
+        - Ruby on Rails
+        - Linux
+        - Wordpress
+        - Memcached
+        - Moodle
+        - Ubuntu
+        - MySQL
+        - Sybase
+        - SOAP
+        - Solaris
+    -
+      organization: Wplex Software
+      title: Estágio
+      time_frame: Março 2007 - Setembro 2008
+      description:
+        - "Desenvolvimento de componentes para a solução de ITS (Inteligent Transportation System) da empresa, desenvolvimento e manuntenção do portal corporativo, utilizando Wordpress."
+        - "Também era responsável pelo gerenciamento periódico de equipamentos de rede e servidores do datacenter interno da empresa. Realizei a implantação de diversas instalações de Linux, migração de versão de máquinas em produção e gerenciamento de soluções internas de auxílio ao desenvolvimento."
+        - "Responsavel pela migração dos repositórios de código-fonte institucional da solução CVS para SVN."
+      tags:
+        - PHP
+        - Java
+        - JSP
+        - JSF
+        - jQuery
+        - Google Maps
+        - jBoss
+        - SVN
+        - CVS
+        - Ubuntu
+        - RHEL
+        - Oracle
+    -
+      organization: Modelo Comunicação
+      title: Contrato
+      time_frame: Novembro 2006 - Março 2007
+      description:
+        - "Desenvolvimento web para um grande portal brasileiro, relacionado diretamente com a MSN Brasil, implantação de solução de gerenciamento de propagandas OpenAds (atual OpenX), melhorias na solução interna de gerenciamento de portais, utilizado em diversas implantações da empresa."
+      tags:
+        - PHP
+        - MySQL
+        - Linux
+  congresses:
+    -
+      date_year: 2011
+      name: "6º Congresso Catarinense de Software Livre (SoLiSC)"
+      location: "Florianópolis, SC"
+    -
+      date_year: 2010
+      name: RubyConf Brasil
+      location: "São Paulo, SP"
+    -
+      date_year: 2009
+      name: 8th International Information and Telecommunication Technologies Symposium (I2TS)
+      location: "Florianópolis, SC"
+    - 
+      date_year: 2009
+      name: 4º Congresso Catarinense de Software Livre (SoLiSC)
+      location: "Florianópolis, SC"
+    -
+      date_year: 2008
+      name: Escola Regional de Banco de Dados (ERBD)
+      location: "Florianópolis, SC"
+    -
+      date_year: 2007
+      name: Caravana Tecnológica GuJava/SC
+      location: "Florianópolis, SC"
+        

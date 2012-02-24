@@ -1,7 +1,11 @@
 # -*- encoding : utf-8 -*-
-class CurriculumApp < Sinatra::Base  
-  before do
-    @person = OpenStruct.new(YAML.load(File.read("db/curriculum.yml"))['person'])
+class CurriculumApp < Sinatra::Base
+  register Sinatra::R18n
+  set :root,           File.dirname(__FILE__)
+  set :default_locale, 'en'
+  
+  def load_curriculum(curriculum)
+    @person = OpenStruct.new(YAML.load(File.read("db/#{curriculum}.yml"))['person'])
     
     @person.address = OpenStruct.new(@person.address)
     @person.skills.map!{ |skill| OpenStruct.new(skill) }
@@ -44,10 +48,18 @@ class CurriculumApp < Sinatra::Base
   end
 
   get '/' do
+    redirect '/en'
+  end
+  
+  get '/:locale' do
+    case params[:locale]
+    when 'pt'
+      load_curriculum("curriculum.pt-BR")
+    else
+      load_curriculum("curriculum")
+    end
+      
     erb :index, :locals => { :title => "#{@person.name} | Curriculum Vitae", :person => @person }
   end
   
-  get '/curriculum' do
-    erb :index, :locals => { :title => "#{@person.name} | Curriculum Vitae", :person => @person }
-  end
 end
