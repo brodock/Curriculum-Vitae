@@ -1,134 +1,134 @@
 <div id="doc2" class="yui-t7">
-	<div id="inner">
-	
-		<div id="hd">
-			<div class="yui-gc">
-				<div class="yui-u first">
-					<h1><%= person.display_name %></h1>
-					<h2><%= person.display_title %></h2>
-				</div>
+  <div id="inner">
+  
+    <div id="hd">
+      <div class="yui-gc">
+        <div class="yui-u first">
+          <h1><%= person.display_name %></h1>
+          <h2><%= person.display_title %></h2>
+        </div>
 
-				<div class="yui-u">
-					<div class="contact-info">
-						<h3><a id="pdf" href="<%= "#{base_url}/" %>"><%= t.html_version %></a></h3>
-						<h3><%= link_to person.website.sub('http://', ''), person.website %>
-						<h3><%= mail_to person.email %></h3>
-						<h3><%= person.mobile_phone %></h3>
-						<h3><%= "#{person.address.city}, #{person.address.state} - #{person.address.country}" %></h3>
-					</div><!--// .contact-info -->
-				</div>
-			</div><!--// .yui-gc -->
-		</div><!--// hd -->
+        <div class="yui-u">
+          <div class="contact-info">
+            <h3><a id="pdf" href="<%= "#{base_url}/" %>"><%= t.html_version %></a></h3>
+            <h3><%= link_to person.website.sub('http://', ''), person.website %>
+            <h3><%= mail_to person.email %></h3>
+            <h3><%= person.mobile_phone %></h3>
+            <h3><%= "#{person.address.city}, #{person.address.state} - #{person.address.country}" %></h3>
+          </div><!--// .contact-info -->
+        </div>
+      </div><!--// .yui-gc -->
+    </div><!--// hd -->
 
-		<div id="bd">
-			<div id="yui-main">
-				<div class="yui-b">
+    <div id="bd">
+      <div id="yui-main">
+        <div class="yui-b">
 
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2><%= t.skills %></h2>
-						</div>
-						<div class="yui-u">
+          <div class="yui-gf">
+            <div class="yui-u first">
+              <h2><%= t.skills %></h2>
+            </div>
+            <div class="yui-u">
               <% person.skills.each do |skill|%>
-								<div class="talent">
-									<h2><%= skill.title %></h2>
-									<p><%= skill.description %></p>
-								</div>
+                <div class="talent">
+                  <h2><%= skill.title %></h2>
+                  <p><%= skill.description %></p>
+                </div>
               <% end %>
-						</div>
-					</div><!--// .yui-gf -->
-					
-					<div class="yui-gf">
-         		<div class="yui-u first">
-							<h2><%= t.technologies%></h2>
-						</div>
-						<div class="yui-u">
+            </div>
+          </div><!--// .yui-gf -->
+          
+          <div class="yui-gf">
+            <div class="yui-u first">
+              <h2><%= t.technologies%></h2>
+            </div>
+            <div class="yui-u">
               <% @max_per_column = group_columns_max(3, person.technologies) %>
-					    <% group_columns(3, person.technologies).each do |group| %>
-  						  <ul class="talent">
-    						  <% group.each_with_index do |tech, index| %>
-    						    <li<%= ' class="last"' if (index == @max_per_column-1) %>><%= tech %></li>
-    						  <% end %>
-    						</ul>
-						  <% end %>
+              <% group_columns(3, person.technologies).each do |group| %>
+                <ul class="talent">
+                  <% group.each_with_index do |tech, index| %>
+                    <li<%= ' class="last"' if (index == @max_per_column-1) %>><%= tech %></li>
+                  <% end %>
+                </ul>
+              <% end %>
 
-						</div>
-					</div><!--// .yui-gf-->
+            </div>
+          </div><!--// .yui-gf-->
           
 
-					<div class="yui-gf">
-	
-						<div class="yui-u first">
-							<h2><%= t.experience %></h2>
-						</div><!--// .yui-u -->
+          <div class="yui-gf">
+  
+            <div class="yui-u first">
+              <h2><%= t.experience %></h2>
+            </div><!--// .yui-u -->
 
-						<div class="yui-u">
-						  
+            <div class="yui-u">
+              
               <% person.jobs.each do |job| %>
-							<div class="job">
-								<h2><%= job.organization %></h2>
-								<h3><%= job.title %></h3>
-								<h4><%= job.time_frame %></h4>
-								<% job.description.each do |paragraph| %>
-								<p><%= paragraph %></p>
-								<% end %>
-								<% job.tags.each do |tag| %>
-  							<span class="tags"><%= tag %></span>
-  							<% end %>
-							</div>
+              <div class="job">
+                <h2><%= job.organization %></h2>
+                <h3><%= job.title %></h3>
+                <h4><%= job.time_frame %></h4>
+                <% job.description.each do |paragraph| %>
+                <p><%= paragraph %></p>
+                <% end %>
+                <% job.tags.each do |tag| %>
+                <span class="tags"><%= tag %></span>
+                <% end %>
+              </div>
               <% end %>
 
-						</div><!--// .yui-u -->
-					</div><!--// .yui-gf -->
+            </div><!--// .yui-u -->
+          </div><!--// .yui-gf -->
 
 
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2><%= t.education %></h2>
-						</div><!--// .yui-u -->
-						<div class="yui-u">
-						  <% person.education.each do |edu| %>
-						  <div class="education">
-  							<h2><%= edu.institution %></h2>
-  							<h3><%= edu.degree %></h3>
-  							<h4><%= edu.time_frame %></h4>
-  							<% edu.description.each do |paragraph| %>
-  							<p><%= paragraph %></p>
-  							<% end %>
-  							<% edu.technologies.each do |tech| %>
-  							<span class="tags"><%= tech %></span>
-  							<% end %>
-							</div>
-							<% end %>
-						</div><!--// .yui-u -->
-					</div><!--// .yui-gf -->
+          <div class="yui-gf">
+            <div class="yui-u first">
+              <h2><%= t.education %></h2>
+            </div><!--// .yui-u -->
+            <div class="yui-u">
+              <% person.education.each do |edu| %>
+              <div class="education">
+                <h2><%= edu.institution %></h2>
+                <h3><%= edu.degree %></h3>
+                <h4><%= edu.time_frame %></h4>
+                <% edu.description.each do |paragraph| %>
+                <p><%= paragraph %></p>
+                <% end %>
+                <% edu.technologies.each do |tech| %>
+                <span class="tags"><%= tech %></span>
+                <% end %>
+              </div>
+              <% end %>
+            </div><!--// .yui-u -->
+          </div><!--// .yui-gf -->
 
 
-					<div class="yui-gf last">
-						<div class="yui-u first">
-							<h2><%= t.congress_and_conferences %></h2>
-						</div><!--// .yui-u -->
-						<div class="yui-u">
-						  <% person.congresses.each do |con| %>
-						  <div class="congress">
-  							<h2><%= con.name %></h2>
-  							<h3><%= con.location %></h3>
-  							<h4><%= con.date_year %></h4>
-							</div>
-							<% end %>
-						</div><!--// .yui-u -->
-					</div><!--// .yui-gf -->
+          <div class="yui-gf last">
+            <div class="yui-u first">
+              <h2><%= t.congress_and_conferences %></h2>
+            </div><!--// .yui-u -->
+            <div class="yui-u">
+              <% person.congresses.each do |con| %>
+              <div class="congress">
+                <h2><%= con.name %></h2>
+                <h3><%= con.location %></h3>
+                <h4><%= con.date_year %></h4>
+              </div>
+              <% end %>
+            </div><!--// .yui-u -->
+          </div><!--// .yui-gf -->
 
 
-				</div><!--// .yui-b -->
-			</div><!--// yui-main -->
-		</div><!--// bd -->
+        </div><!--// .yui-b -->
+      </div><!--// yui-main -->
+    </div><!--// bd -->
 
-		<div id="ft">
-			<p><%= @person.name %> &mdash; <%= mail_to @person.email %> &mdash; <%= @person.mobile_phone %> &mdash; <%=skype_to 'brodock' %></p>
-		</div><!--// footer -->
+    <div id="ft">
+      <p><%= @person.name %> &mdash; <%= mail_to @person.email %> &mdash; <%= @person.mobile_phone %> &mdash; <%=skype_to 'brodock' %></p>
+    </div><!--// footer -->
 
-	</div><!-- // inner -->
+  </div><!-- // inner -->
 
 
 </div><!--// doc -->

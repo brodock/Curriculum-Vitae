@@ -1,7 +1,9 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'sinatra/base'
-require 'sinatra/r18n'
+Bundler.require(:default)
+
+require './lib/helpers.rb'
+require './lib/loader.rb'
 require './application.rb'
 run CurriculumApp
