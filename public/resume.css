@@ -3,10 +3,8 @@
 	STRIPPED DOWN RESUME TEMPLATE
     html resume
 
-    v0.9: 5/28/09
-
-    design and code by: thingsthatarebrown.com 
-                        (matt brown)
+    design and code originally by: thingsthatarebrown.com (matt brown)
+    modified by: Gabriel Mazetto
 ---------------------------------------------------------------------------------
 */
 
@@ -17,8 +15,9 @@
 .msg a:hover { background: #266400; }
 
 /* //-- yui-grids style overrides -- */
+html { background: #f5f5f5; }
 body { font-family: Georgia; color: #444; }
-#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
+#inner { padding: 10px 80px; margin: 80px auto; background: #fff; border: solid #666; border-width: 8px 0 2px 0; -moz-box-shadow: 0px 0px 40px #808080; -webkit-box-shadow: 0px 0px 40px #808080; box-shadow: 0px 0px 40px #808080; -moz-border-radius: 16px; -webkit-border-radius: 16px; border-radius: 16px; }
 .yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
 
 /* //-- header, body, footer -- */
