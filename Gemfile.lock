@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/brodock/sinatra-static-assets.git
+  revision: 89a1da46855334915f644676a0e20f481801f766
+  specs:
+    sinatra-static-assets (1.0.2)
+      sinatra (>= 1.1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -14,8 +21,6 @@ GEM
     sinatra-r18n (0.4.14)
       r18n-core (= 0.4.14)
       sinatra (>= 1.3)
-    sinatra-static-assets (1.0.2)
-      sinatra (>= 1.1.0)
     tilt (1.3.3)
 
 PLATFORMS
@@ -25,4 +30,4 @@ DEPENDENCIES
   shotgun
   sinatra
   sinatra-r18n
-  sinatra-static-assets
+  sinatra-static-assets!
