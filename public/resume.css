@@ -75,4 +75,21 @@ a#pdf:hover { background: #222; }
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
 
+/* CSS3 Animation */
+@-moz-keyframes appear
+{
+  from {opacity: 0;}
+  to {opacity: 1}
+}
+@-webkit-keyframes appear
+{
+  from {opacity: 0;}
+  to {opacity: 1}
+}
+@keyframes appear
+{
+  from {opacity: 0;}
+  to {opacity: 1}
+}
 
+html { -moz-animation: appear 2s; -webkit-animation: appear 2s; animation: appear 2s;}
