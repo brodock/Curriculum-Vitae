@@ -11,11 +11,11 @@ person:
     country: Brazil
   skills:
     -
-      title: Web Developement
-      description: "multi-language developement, version control, BDD, high availability, scalability"
+      title: Web Development
+      description: "multi-language development, version control, BDD, high availability, scalability"
     -
       title: Sysadmin
-      description: "deployment, system monitoring, tunning, cloud provisioning, linux"
+      description: "deployment, system monitoring, tuning, cloud provisioning, linux"
   technologies:
     - PHP5
     - Ruby on Rails
@@ -53,10 +53,10 @@ person:
       description:
         - "Complete code refactoring of the whole application, implemented CAS based centralized authentication to all related portals. All the code base was rewritten, as the client had an old, unmaintainable, unlocalized, codebase originally written for Rails 1.1. It had been upgraded to Rails 2.1 with lots of technical debts."
         - "The portal was split into some small applications with focused scopes, to better build a foundation for future scalability and help maintain lean codebase."
-        - "The databases was migrated from Postgres, storing relational data and analytics, to a combination of MySQL server to hold relational data and MongoDB to hold analytics, resulting in a great speed gain with orders of magnitude."
+        - "The databases was migrated from PostgreSQL, storing relational data and analytics, to a combination of MySQL server to hold relational data and MongoDB to hold analytics, resulting in a great speed gain with orders of magnitude."
         - "They are now able to provide their clients with analytical reports generated almost in realtime."
-        - "As they now run Ruby on Rails 3.1 with Ruby 1.9.3, they benefit from every single inovation and speed gains of both of them."
-        - "Localization was also a game change, as they are expanding their activities to attract international clients and finally a mobile version is on test soon to be deployed"
+        - "As they now run Ruby on Rails 3.1 with Ruby 1.9.3, they benefit from every single innovation and speed gains of both of them."
+        - "Localization was also a game change, as they are expanding their activities to attract international clients and finally a mobile version is on test soon to be deployed."
       tags:
         - Ruby on Rails
         - MongoDB
@@ -93,7 +93,7 @@ person:
       title: Co-OP
       time_frame: March 2007 - September 2008
       description:
-        - "Development of components to their web based ITS (Inteligent Transportation System) solution, development and management of the corporate website, powered by a Wordpress solution."
+        - "Development of components to their web based ITS (Intelligent Transportation System) solution, development and management of the corporate website, powered by a Wordpress solution."
         - "Periodically managing their in­house datacenter network equipments and servers. Deploying new Linux installations, upgrading existing ones and managing existing internal development tools."
         - "Responsible for CVS repositories migration to SVN solution."
       tags:
