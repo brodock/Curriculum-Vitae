@@ -10,5 +10,7 @@ gem 'sinatra-r18n', :require => 'sinatra/r18n'
 gem 'sinatra-static-assets', :require => 'sinatra/static_assets', :git => 'git://github.com/brodock/sinatra-static-assets.git'
 
 group :development do
-  gem 'shotgun'
+  gem 'puma'
+  gem 'capistrano'
+  gem 'rvm-capistrano'
 end
