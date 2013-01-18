@@ -1,16 +1,16 @@
-require "rvm/capistrano"                  # Load RVM's capistrano plugin.
 require "bundler/capistrano"
 
-set :rvm_ruby_string, 'ruby-1.9.3-p194'        # Or whatever env you want it to run in.
-set :rvm_type, :system
 set :bundle_flags,    "--quiet"
 
-set :user, "brodock"
-set :application, "curriculum"
+set :application, "gabrielmazetto.eti.br"
 set :repository,  "git://github.com/brodock/Curriculum-Vitae.git"
-set :deploy_to, "/var/www/#{application}"
 set :scm, :git
-ssh_options[:forward_agent] = true
+
+set :deploy_to, "/home/brodock/#{application}"
+set :deploy_via, :remote_cache
+
+set :user, "brodock"
+set :use_sudo, false
 
 #role :web, "your web-server here"                          # Your HTTP server, Apache/etc
 #role :app, "your app-server here"                          # This may be the same as your `Web` server
@@ -22,6 +22,6 @@ namespace :deploy do
    task :start do ; end
    task :stop do ; end
    task :restart, :roles => :app, :except => { :no_release => true } do
-     run "touch #{File.join(current_release,'tmp','restart.txt')}"
+     run "#{try_sudo} touch #{File.join(current_release,'tmp','restart.txt')}"
    end
  end
