@@ -47,6 +47,20 @@ person:
         - "No trabalho final de conclusão de curso (TCC), produzi um estudo de escalabilidade, focado em aplicações Ruby on Rails, bem como um levantamento de estratégias e decisões de projeto que podem ser utilizadas para solucionar boa parte dos problemas em aberto neste assunto."
   jobs:
     -
+      organization: Universidade Federal de Santa Catarina (UFSC)
+      title: Líder Técnico
+      time_frame: Maio 2012 - atual
+      description:
+        - ""
+      tags:
+        - Ruby on Rails
+        - MySQL
+        - Gitlab
+        - Linux
+        - Continuous Integration
+        - RSpec
+        - Moodle
+    -
       organization: CIMM
       title: Contrato
       time_frame: Janeiro 2011 - Janeiro 2012
@@ -120,8 +134,16 @@ person:
         - Linux
   congresses:
     -
+      date_year: 2013
+      name: RubyConf Brasil
+      location: "São Paulo, SP"
+    -
+      date_year: 2013
+      name: The Developer Conference (TDC)
+      location: "Florianópolis, SC"
+    -
       date_year: 2011
-      name: "6º Congresso Catarinense de Software Livre (SoLiSC)"
+      name: 6º Congresso Catarinense de Software Livre (SoLiSC)
       location: "Florianópolis, SC"
     -
       date_year: 2010

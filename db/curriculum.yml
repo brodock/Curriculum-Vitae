@@ -31,7 +31,7 @@ person:
     - Git
   education:
     -
-      degree: "Bachelor of Computer Information Systems"
+      degree: Bachelor of Computer Information Systems
       institution: Federal University of Santa Catarina (UFSC)
       time_frame: 2006 - 2011
       technologies:
@@ -46,6 +46,20 @@ person:
       description:
         - "Final Thesis, consisted on a study of Ruby on Rails' Scalability and design approaches needed to solve many existing gaps."
   jobs:
+    -
+      organization: Universidade Federal de Santa Catarina (UFSC)
+      title: Technical Lead
+      time_frame: May 2012 - now
+      description:
+        - ""
+      tags:
+        - Ruby on Rails
+        - MySQL
+        - Gitlab
+        - Linux
+        - Continuous Integration
+        - RSpec
+        - Moodle
     -
       organization: CIMM
       title: Contractor
@@ -120,8 +134,16 @@ person:
         - Linux
   congresses:
     -
+      date_year: 2013
+      name: RubyConf Brasil
+      location: "São Paulo, SP"
+    -
+      date_year: 2013
+      name: The Developer Conference (TDC)
+      location: "Florianópolis, SC"
+    -
       date_year: 2011
-      name: "6º Congresso Catarinense de Software Livre (SoLiSC)"
+      name: 6º Congresso Catarinense de Software Livre (SoLiSC)
       location: "Florianópolis, SC"
     -
       date_year: 2010
