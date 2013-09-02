@@ -1,7 +1,7 @@
 person:
   name: Gabriel Gonçalves Nunes Mazetto
   display_name: Gabriel Mazetto
-  display_title: Web developer
+  display_title: Full-Stack Developer
   email: brodock@gmail.com
   website: http://blog.gabrielmazetto.eti.br
   mobile_phone: +55 (48) 9126-0593
@@ -60,16 +60,16 @@ person:
         - Continuous Integration
         - RSpec
         - Moodle
+        - LTI
+        - Code Revision
     -
       organization: CIMM
       title: Contractor
       time_frame: January 2011 - January 2012
       description:
-        - "Complete code refactoring of the whole application, implemented CAS based centralized authentication to all related portals. All the code base was rewritten, as the client had an old, unmaintainable, unlocalized, codebase originally written for Rails 1.1. It had been upgraded to Rails 2.1 with lots of technical debts."
-        - "The portal was split into some small applications with focused scopes, to better build a foundation for future scalability and help maintain lean codebase."
+        - "Complete code rewrite, as the code was old, unmaintainable, unlocalized, codebase originally written for Rails 1.1. Before this project started It had been upgraded to Rails 2.1 but remained lots of technical debts."
+        - "The portal was split into small applications with focused scopes, to better build a foundation for future scalability and help maintain lean codebase. A centralized authentication solution (based on CAS) was implemented to create a SSO to the applications."
         - "The databases was migrated from PostgreSQL, storing relational data and analytics, to a combination of MySQL server to hold relational data and MongoDB to hold analytics, resulting in a great speed gain with orders of magnitude (reports that took almost 30 hours to be generated in the past, are now available in less then 10 minutes)."
-        - "With the migration to Ruby on Rails 3.1 and Ruby 1.9.3, they benefit from every single innovation and speed gains of both of them."
-        - "Localization was also a game-changer, as they are expanding their activities to attract international clients and finally a mobile version is on test soon to be deployed."
       tags:
         - Ruby on Rails
         - MongoDB
