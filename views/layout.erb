@@ -11,6 +11,13 @@
   <%= stylesheet_link_tag 'resume.css', :media => 'all' %>
   <%= stylesheet_link_tag 'print.css', :media => 'print' %>
   
+</head>
+<body>
+
+  <a href="https://github.com/brodock" id="github"><%= image_tag '/images/forkme_right_gray_6d6d6d.png', alt: 'Fork me on GitHub' %></a>
+
+  <%= yield %>
+
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-1702393-2']);
@@ -22,13 +29,6 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
-</head>
-<body>
-
-  <a href="http://github.com/brodock" id="github"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
-
-  <%= yield %>
-
 </body>
 </html>
 
