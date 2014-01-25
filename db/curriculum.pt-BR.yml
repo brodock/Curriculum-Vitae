@@ -16,13 +16,16 @@ person:
     -
       title: Administração de sistemas
       description: "deployment, monitoração de sistemas, tunning, cloud provisioning, linux"
+    -
+      title: DevOps
+      description: "chef, cookbooks, melhores práticas, opensource"
   technologies:
-    - PHP5
     - Ruby on Rails
+    - HTML5
+    - PHP5
     - MySQL
     - jQuery
     - Linux
-    - HTML5
     - CSS3
     - MongoDB
     - Java
@@ -51,12 +54,13 @@ person:
       title: Líder Técnico
       time_frame: Maio 2012 - atual
       description:
-        - ""
+        - "Desenvolvimento de tecnologias de apoio ao projeto de ensino a distância, ligado ao Ministério da Saúde e a Universidade Aberta do SUS (UNA-SUS) em parceira com a Universidade Federal de Santa Catarina."
       tags:
         - Ruby on Rails
         - MySQL
         - Gitlab
         - Linux
+        - Chef
         - Continuous Integration
         - RSpec
         - Moodle
@@ -133,6 +137,10 @@ person:
         - MySQL
         - Linux
   congresses:
+    -
+      date_year: 2013
+      name: "RsOnRails 5ª edição (Palestrante)"
+      location: "Porto Alegre, RS"
     -
       date_year: 2013
       name: RubyConf Brasil
