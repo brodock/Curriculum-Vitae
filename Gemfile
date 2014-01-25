@@ -5,5 +5,5 @@ gem 'sinatra-static-assets', :require => 'sinatra/static_assets', :git => 'git:/
 
 group :development do
   gem 'puma'
-  gem 'capistrano'
+  gem 'capistrano', '~> 2.15'
 end
