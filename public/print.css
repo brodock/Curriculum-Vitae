@@ -1,11 +1,14 @@
 @media print {
   @page {
     size: A4 portrait;
-    margin: 0cm;
+    margin: 2cm 0cm;
+  }
+  @page :first {
+    margin: 0cm 0cm 2cm 0cm;
   }
 }
 
-html {
+html, body {
   background: white !important;
 }
 #inner {
@@ -31,4 +34,5 @@ a#pdf {
 .job p, 
 .education p, 
 .congress p { page-break-inside: avoid; }
-
+#congress-and-conferences, .job { page-break-inside: avoid; }
+#congress-and-conferences { page-break-before: always; }
