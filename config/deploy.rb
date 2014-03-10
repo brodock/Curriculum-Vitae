@@ -1,27 +1,39 @@
-require "bundler/capistrano"
+# config valid only for Capistrano 3.1
+lock '3.1.0'
 
-set :bundle_flags,    "--quiet"
+set :application, 'gabrielmazetto.eti.br'
+set :repo_url, 'https://github.com/brodock/Curriculum-Vitae.git'
 
-set :application, "gabrielmazetto.eti.br"
-set :repository,  "git://github.com/brodock/Curriculum-Vitae.git"
-set :scm, :git
+set :format, :pretty
+set :log_level, :info
 
-set :deploy_to, "/home/brodock/#{application}"
-set :deploy_via, :remote_cache
+# Default value for :linked_files is []
+# set :linked_files, %w{config/database.yml}
 
-set :user, "brodock"
-set :use_sudo, false
+# Default value for linked_dirs is []
+# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
-#role :web, "your web-server here"                          # Your HTTP server, Apache/etc
-#role :app, "your app-server here"                          # This may be the same as your `Web` server
-role :web, "your web-server here"                          # Your HTTP server, Apache/etc
-role :app, "your app-server here"                          # This may be the same as your `Web` server
+set :default_env, {'LANG' => 'pt_BR.UTF-8'}
+set :keep_releases, 10
 
-# If you are using Passenger mod_rails uncomment this:
+set :ssh_options, {
+    forward_agent: true
+}
+
 namespace :deploy do
-   task :start do ; end
-   task :stop do ; end
-   task :restart, :roles => :app, :except => { :no_release => true } do
-     run "#{try_sudo} touch #{File.join(current_release,'tmp','restart.txt')}"
-   end
- end
+
+  desc 'Restart application'
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      execute :touch, release_path.join('tmp/restart.txt')
+    end
+
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
+      within release_path do
+        execute :rake, 'assets:clean'
+      end
+    end
+  end
+
+  after :publishing, :restart
+end

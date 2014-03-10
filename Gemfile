@@ -6,5 +6,7 @@ gem 'sinatra-asset-pipeline', :require => 'sinatra/asset_pipeline'
 
 group :development do
   gem 'puma'
-  gem 'capistrano', '~> 2.15'
+  gem 'capistrano', '~> 3.1'
+  gem 'capistrano-bundler', '~> 1.1'
+  gem 'capistrano-rails'
 end
