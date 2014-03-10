@@ -22,6 +22,16 @@ set :ssh_options, {
 
 namespace :deploy do
 
+  task :precompile do
+    on roles(:app) do
+      within release_path do
+        with rack_env: fetch(:rack_env) do
+          execute :rake, "assets:precompile"
+        end
+      end
+    end
+  end
+
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
@@ -29,5 +39,6 @@ namespace :deploy do
     end
   end
 
+  after :updated, :precompile
   after :publishing, :restart
 end

@@ -4,3 +4,4 @@
 .bundle
 .idea
 .sass-cache
+/public/assets
