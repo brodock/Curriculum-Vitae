@@ -3,6 +3,8 @@ class CurriculumApp < Sinatra::Base
   include Curriculum::Loader
   register Sinatra::R18n
   register Sinatra::StaticAssets
+  register Sinatra::AssetPipeline
+
   set :root, File.dirname(__FILE__)
   set :default_locale, 'en'
 
