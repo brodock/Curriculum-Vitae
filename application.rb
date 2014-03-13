@@ -10,6 +10,8 @@ class CurriculumApp < Sinatra::Base
   # Assets
   set :assets_css_compressor, :sass
   set :assets_js_compressor, :uglifier
+  set :assets_precompile, %w(app.js app.css print.css *.png *.jpg *.svg *.eot *.ttf *.woff)
+
   register Sinatra::AssetPipeline
 
   helpers Curriculum::Helpers
