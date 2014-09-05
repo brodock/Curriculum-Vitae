@@ -1,6 +1,3 @@
-# config valid only for Capistrano 3.1
-lock '3.1.0'
-
 set :application, 'gabrielmazetto.eti.br'
 set :repo_url, 'https://github.com/brodock/Curriculum-Vitae.git'
 
