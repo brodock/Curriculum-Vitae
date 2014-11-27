@@ -2,7 +2,7 @@ person:
   name: Gabriel Gonçalves Nunes Mazetto
   display_name: Gabriel Mazetto
   display_title: Desenvolvedor Web (Full-Stack)
-  email: brodock@gmail.com
+  email: contato@gabrielmazetto.eti.br
   website: http://blog.gabrielmazetto.eti.br
   mobile_phone: +55 (48) 9126-0593
   address:
@@ -138,39 +138,42 @@ person:
         - Linux
   congresses:
     -
+      date_year: 2014
+      name: The Developer's Conference - Ruby (Palestrante)
+      location: Florianópolis, SC
+    -
       date_year: 2013
-      name: "RsOnRails 5ª edição (Palestrante)"
-      location: "Porto Alegre, RS"
+      name: RsOnRails 5ª edição (Palestrante)
+      location: Porto Alegre, RS
     -
       date_year: 2013
       name: RubyConf Brasil
-      location: "São Paulo, SP"
+      location: São Paulo, SP
     -
       date_year: 2013
       name: The Developer Conference (TDC)
-      location: "Florianópolis, SC"
+      location: Florianópolis, SC
     -
       date_year: 2011
       name: 6º Congresso Catarinense de Software Livre (SoLiSC)
-      location: "Florianópolis, SC"
+      location: Florianópolis, SC
     -
       date_year: 2010
       name: RubyConf Brasil
-      location: "São Paulo, SP"
+      location: São Paulo, SP
     -
       date_year: 2009
       name: 8th International Information and Telecommunication Technologies Symposium (I2TS)
-      location: "Florianópolis, SC"
+      location: Florianópolis, SC
     - 
       date_year: 2009
       name: 4º Congresso Catarinense de Software Livre (SoLiSC)
-      location: "Florianópolis, SC"
+      location: Florianópolis, SC
     -
       date_year: 2008
       name: Escola Regional de Banco de Dados (ERBD)
-      location: "Florianópolis, SC"
+      location: Florianópolis, SC
     -
       date_year: 2007
       name: Caravana Tecnológica GuJava/SC
-      location: "Florianópolis, SC"
-        
+      location: Florianópolis, SC
