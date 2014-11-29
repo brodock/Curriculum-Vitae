@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.4'
+
+gem 'puma'
 gem 'sinatra', :require => 'sinatra/base'
 gem 'sinatra-r18n', :require => 'sinatra/r18n'
 gem 'sinatra-static-assets', :require => 'sinatra/static_assets', :git => 'git://github.com/brodock/sinatra-static-assets.git'
@@ -11,7 +13,6 @@ gem 'sass', '< 3.3.0'
 gem 'uglifier'
 
 group :development do
-  gem 'puma'
   gem 'capistrano', '~> 3.1'
   gem 'capistrano-bundler', '~> 1.1'
   gem 'capistrano-rails'
