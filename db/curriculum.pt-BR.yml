@@ -50,14 +50,34 @@ person:
         - "No trabalho final de conclusão de curso (TCC), produzi um estudo de escalabilidade, focado em aplicações Ruby on Rails, bem como um levantamento de estratégias e decisões de projeto que podem ser utilizadas para solucionar boa parte dos problemas em aberto neste assunto."
   jobs:
     -
-      organization: Universidade Federal de Santa Catarina (UFSC)
-      title: Líder Técnico
-      time_frame: Maio 2012 - atual
+      organization: Resultados Digitais
+      title: Full-Stack Developer
+      time_frame: Outubro 2014 - atual
       description:
-        - "Desenvolvimento de tecnologias de apoio ao projeto de ensino a distância, ligado ao Ministério da Saúde e a Universidade Aberta do SUS (UNA-SUS) em parceira com a Universidade Federal de Santa Catarina."
+        - "Being part of the performance and scalability team, we work hard to improve our APDEX Score and fight technical debt."
       tags:
         - Ruby on Rails
-        - MySQL
+        - Heroku
+        - PostgreSQL
+        - MongoDB
+        - Redis
+        - Resque
+        - Elasticsearch
+        - Sidekiq
+        - Chef
+        - Amazon AWS
+        - Sendgrid
+    -
+      organization: Universidade Federal de Santa Catarina (UFSC)
+      title: Líder Técnico
+      time_frame: Maio 2012 - Dezembro 2014
+      description:
+        - "Desenvolvimento de tecnologias de apoio ao projeto de ensino a distância, ligado ao Ministério da Saúde e a Universidade Aberta do SUS (UNA-SUS) em parceira com a Universidade Federal de Santa Catarina."
+        - "Com um time pequeno e focado, nós entregamos melhorias para o LMS, integração com uma solução de help desk direcionando para o contexto de apoio ao aprendizado, solução para extração de metricas e relatórios com objetivo de melhorar o engajamento dos estudantes."
+        - "A solução mais importante que construímos, que era essencial para o sucesso do projeto como um todo, foi um editor de monografias, totalmente integrado com o LMS, com o plano pedagógico, e com a hierarquia organizacional garantindo a execução do processo de revisão e aprovação. Gerando ao final um arquivo PDF seguindo todas as regras da ABNT e templates da universidade."
+      tags:
+        - Ruby on Rails
+        - MariaDB
         - Gitlab
         - Linux
         - Chef
@@ -65,10 +85,12 @@ person:
         - RSpec
         - Moodle
         - LTI
-        - Code Revision
+        - Code Review
+        - Redmine
+        - LaTeX
     -
       organization: CIMM
-      title: Contrato
+      title: Desenvolvedor Full-Stack (Freelancer)
       time_frame: Janeiro 2011 - Janeiro 2012
       description:
         - "Reescrita completa da aplicação existente, já que era composta por base de código legada, de dificil manuntenção, originalmente escrita para Ruby on Rails 1.1. Anteriormente a este projeto, esta base de código recebeu correções pontuais que possibilitou sua atualização até a versão 2.1, mas ainda assim, permaneceu com uma enorme quantidade de dívidas técnicas. "
@@ -87,12 +109,12 @@ person:
         - Linux
     -
       organization: Universidade Federal de Santa Catarina (UFSC)
-      title: Estágio
+      title: Desenvolvedor Full-Stack (Estágio)
       time_frame: Setembro 2008 - Agosto 2011
       description:
-        - "Desenvolvimento web, ligados ao projeto EaD-UFSC e UNA-SUS,  para o ambiente de aprendizado a distância (baseado em Moodle), desenvolvimento, implantação e manuntenção da solução de controle de conteúdos (CMS) responsavel pela maioria dos portais da universidaes, seus cursos, centros de pesquisa, etc."
-        - "Participei do projeto de reestruturaçãodos portais institucionais desde sua concepção, auxiliando no planejamento do projeto como um todo, desde o dimensionamento de recursos computacionais, planejamento da implantação, planejamento da migração dos conteúdos existentes na solução anterior, implantação de alta disponibilidade, e treinamento dos principais usuários institucionais."
-        - "Também fui responsável pela implantação e gerenciamento de soluções internas, utilizada pelos diversos times de desenvolvimento: Gitorious, Redmine."
+        - "Desenvolvimento web, ligados ao projeto EaD-UFSC e UNA-SUS, para o ambiente de aprendizado a distância (Moodle), desenvolvimento, implantação e manuntenção da solução de controle de conteúdos (CMS) responsavel pela maioria dos portais da universidaes, seus cursos, centros de pesquisa, etc."
+        - "Como parte do projeto de reestruturação dos portais institucionais desde sua concepção, minhas contribuições foram desde o dimensionamento de recursos computacionais, planejamento da implantação inicial, migração automatizada dos conteúdos existentes na solução anterior, e treinamento dos principais usuários institucionais."
+        - "Também fui responsável pela implantação e gerenciamento de soluções internas, utilizada por outros times de desenvolvimento: Gitorious, Redmine, e implementei diversas melhorias na solução de CMS nas area de cache e escalabilidade horizontal"
       tags:
         - PHP
         - Ruby on Rails
@@ -107,7 +129,7 @@ person:
         - Solaris
     -
       organization: Wplex Software
-      title: Estágio
+      title: Desenvolvedor Web (Estágio)
       time_frame: Março 2007 - Setembro 2008
       description:
         - "Desenvolvimento de componentes para a solução de ITS (Inteligent Transportation System) da empresa, desenvolvimento e manuntenção do portal corporativo, utilizando Wordpress."
@@ -128,7 +150,7 @@ person:
         - Oracle
     -
       organization: Modelo Comunicação
-      title: Contrato
+      title: Desenvolvedor Web (Estágio)
       time_frame: Novembro 2006 - Março 2007
       description:
         - "Desenvolvimento web para um grande portal brasileiro, relacionado diretamente com a MSN Brasil, implantação de solução de gerenciamento de propagandas OpenAds (atual OpenX), melhorias na solução interna de gerenciamento de portais, utilizado em diversas implantações da empresa."
@@ -137,6 +159,10 @@ person:
         - MySQL
         - Linux
   congresses:
+    -
+      date_year: 2014
+      name: RubyConf Brasil
+      location: São Paulo, SP
     -
       date_year: 2014
       name: The Developer's Conference - Ruby (Palestrante)
@@ -165,7 +191,7 @@ person:
       date_year: 2009
       name: 8th International Information and Telecommunication Technologies Symposium (I2TS)
       location: Florianópolis, SC
-    - 
+    -
       date_year: 2009
       name: 4º Congresso Catarinense de Software Livre (SoLiSC)
       location: Florianópolis, SC
