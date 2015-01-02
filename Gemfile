@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.2.0'
 
 gem 'puma'
+gem 'psych'
 gem 'sinatra', :require => 'sinatra/base'
 gem 'sinatra-r18n', :require => 'sinatra/r18n'
 gem 'sinatra-static-assets', :require => 'sinatra/static_assets', :git => 'git://github.com/brodock/sinatra-static-assets.git'
