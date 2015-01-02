@@ -1,3 +1,10 @@
-load 'deploy' if respond_to?(:namespace) # cap2 differentiator
+# Load DSL and Setup Up Stages
+require 'capistrano/setup'
 
-load 'config/deploy' # remove this line to skip loading any of the default tasks
+# Includes default deployment tasks
+require 'capistrano/deploy'
+
+require 'capistrano/bundler'
+
+# Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
+#Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }

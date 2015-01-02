@@ -1,9 +1,3 @@
-require 'rubygems'
-require 'bundler/setup'
+require './lib/init.rb'
 
-Bundler.require(:default)
-
-require './lib/helpers.rb'
-require './lib/loader.rb'
-require './application.rb'
 run CurriculumApp

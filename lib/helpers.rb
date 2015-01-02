@@ -4,16 +4,16 @@ module Curriculum
       @base_url ||= "#{request.env['rack.url_scheme']}://#{request.env['HTTP_HOST']}"
     end
 
-    def mail_to(email)
-      link_to email, "mailto:#{email}"
+    def mail_to(email, options = {})
+      tag('a', options.merge(:href => "mailto:#{email}")) do
+        email
+      end
     end
 
-    def skype_to(skype_handler)
-      link_to("Skype: #{skype_handler}", "skype:#{skype_handler}")
-    end
-
-    def link_to(text, url)
-      "<a href=\"#{url}\">#{text}</a>"
+    def skype_to(skype_handler, options = {})
+      tag('a', options.merge(:href => "skype:#{skype_handler}")) do
+        "Skype: #{skype_handler}"
+      end
     end
 
     def group_columns(num_columns, itens)

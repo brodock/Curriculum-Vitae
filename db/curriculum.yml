@@ -50,30 +50,52 @@ person:
         - "Final Thesis, consisted on a study of Ruby on Rails' Scalability and design approaches needed to solve many existing gaps."
   jobs:
     -
-      organization: Universidade Federal de Santa Catarina (UFSC)
-      title: Technical Lead
-      time_frame: May 2012 - now
+      organization: Resultados Digitais
+      title: Full-Stack Developer
+      time_frame: October 2014 - Now
       description:
-        - "Development of technologies to support the remote learning program, which is a partnership of the University with the Federal Health Care Ministry, to create a Open University for the Federal Health Care System (UNA-SUS)."
+        - "Being part of the performance and scalability team, we work hard to improve our APDEX Score and fight technical debt."
       tags:
         - Ruby on Rails
-        - MySQL
+        - Heroku
+        - PostgreSQL
+        - MongoDB
+        - Redis
+        - Resque
+        - Elasticsearch
+        - Sidekiq
+        - Chef
+        - Amazon AWS
+        - Sendgrid
+    -
+      organization: Universidade Federal de Santa Catarina (UFSC)
+      title: Technical Lead
+      time_frame: May 2012 - December 2014
+      description:
+        - "Development of technologies to support the remote learning program, in partnership of the University and the Federal Health Care Ministry, to create an Open University for the Federal Health Care System (UNA-SUS)."
+        - "With a very small team, we delivered improvements to the LMS, integration of a help desk solutions in the context of educational learning support, to extraction of metrics and reporting solutions to increase student engagement."
+        - "The most important solution we built, that was key for the success of the entire project, was an academic monograph editor, fully integrated with the LMS, the pedagogical plan and with custom, role based, review and approval system, generating at the end, a PDF in total compliance with Brazilian academic document formatting rules."
+      tags:
+        - Ruby on Rails
+        - MariaDB
         - Gitlab
-        - Linux
+        - Escalabilidade
         - Chef
         - Continuous Integration
         - RSpec
         - Moodle
         - LTI
-        - Code Revision
+        - Code Review
+        - Redmine
+        - LaTeX
     -
       organization: CIMM
-      title: Contractor
+      title: Full-Stack Developer (Freelancer)
       time_frame: January 2011 - January 2012
       description:
-        - "Complete code rewrite, as the code was old, unmaintainable, unlocalized, codebase originally written for Rails 1.1. Before this project started It had been upgraded to Rails 2.1 but remained lots of technical debts."
-        - "The portal was split into small applications with focused scopes, to better build a foundation for future scalability and help maintain lean codebase. A centralized authentication solution (based on CAS) was implemented to create a SSO to the applications."
-        - "The databases was migrated from PostgreSQL, storing relational data and analytics, to a combination of MySQL server to hold relational data and MongoDB to hold analytics, resulting in a great speed gain with orders of magnitude (reports that took almost 30 hours to be generated in the past, are now available in less then 10 minutes)."
+        - "Complete code rewrite, as the code was old, unmaintainable, not localized, and codebase was originally written for Rails 1.1. Before this project started It had been upgraded to Rails 2.1 but lots of technical debts remained."
+        - "The portal was split into small applications with focused scopes, to better build a foundation for future scalability and help maintain lean codebase. A centralized authentication solution (based on CAS) was implemented to create a SSO solution."
+        - "Database was migrated from PostgreSQL, storing relational data and analytics, to a combination of MySQL server to hold relational data and MongoDB to hold analytics, resulting in a great speed gain with orders of magnitude (reports that took almost 30 hours to be generated in the past, are available in less than 10 minutes with the new infrastructure)."
       tags:
         - Ruby on Rails
         - MongoDB
@@ -87,16 +109,16 @@ person:
         - Linux
     -
       organization: Federal University of Santa Catarina (UFSC)
-      title: Co-OP
+      title: Full-Stack Developer (Co-OP)
       time_frame: September 2008 - August 2011
       description:
-        - "Web development for the Distance Learning Environment (Moodle based) and developing, managing the institutional CMS that powers the university's main website and many sub­portals."
-        - "I was on the institutional CMS project from the beginning, helping to plan the whole project from sizing computational resources, planning deployment, planning migrations and training the first key users."
-        - "Also I was responsible for managing some backend solutions used by the development team: Gitorious, Redmine."
+        - "Web development for the Distance Learning Environment (Moodle based) and the institutional CMS that powers the university's main website and many subportals."
+        - "Being part of the project from the beginning, my contributions went from sizing computational resources, planning the initial deployment, portal migrations and training first key users."
+        - "Also, I was responsible for managing some backend solutions used by the development team: Gitorious, Redmine, and did numerous improvements to the CMS solution in the areas of caching and horizontal scaling."
       tags:
         - PHP
         - Ruby on Rails
-        - Linux
+        - Scalability
         - Wordpress
         - Memcached
         - Moodle
@@ -107,11 +129,11 @@ person:
         - Solaris
     -
       organization: Wplex Software
-      title: Co-OP
+      title: Web Developer (Co-OP)
       time_frame: March 2007 - September 2008
       description:
-        - "Development of components to their web based ITS (Intelligent Transportation System) solution, development and management of the corporate website, powered by a Wordpress solution."
-        - "Periodically managing their in­house datacenter network equipments and servers. Deploying new Linux installations, upgrading existing ones and managing existing internal development tools."
+        - "Development of components to their web-based ITS (Intelligent Transportation System) solution, development and management of the corporate website, powered by a Wordpress solution."
+        - "Periodically managing their in-house datacenter network equipments and servers. Deploying new Linux installations, upgrading existing ones and managing existing internal development tools."
         - "Responsible for CVS repositories migration to SVN solution."
       tags:
         - PHP
@@ -128,15 +150,19 @@ person:
         - Oracle
     -
       organization: Modelo Comunicação
-      title: Contractor
+      title: Web Developer (Co-OP)
       time_frame: November 2006 - March 2007
       description:
-        - "Web development for a big brazilian website linked to MSN Brasil, deployment of OpenAds (now OpenX) to provide Ads control and billing, improvements to the frontend and backend's admin solution."
+        - "Web development for a big Brazilian website linked to MSN Brasil, deployment of OpenAds (now OpenX) to provide Ads control and billing, improvements to the frontend and backend's admin solution."
       tags:
         - PHP
         - MySQL
         - Linux
   congresses:
+    -
+      date_year: 2014
+      name: RubyConf Brasil
+      location: São Paulo, SP
     -
       date_year: 2014
       name: The Developer's Conference (Speaker)
@@ -165,7 +191,7 @@ person:
       date_year: 2009
       name: 8th International Information and Telecommunication Technologies Symposium (I2TS)
       location: Florianópolis, SC
-    - 
+    -
       date_year: 2009
       name: 4º Congresso Catarinense de Software Livre (SoLiSC)
       location: Florianópolis, SC
