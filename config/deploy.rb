@@ -10,20 +10,17 @@ set :log_level, :info
 # Default value for linked_dirs is []
 # set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
-set :default_env, {'LANG' => 'pt_BR.UTF-8'}
+set :default_env, 'LANG' => 'pt_BR.UTF-8'
 set :keep_releases, 10
 
-set :ssh_options, {
-    forward_agent: true
-}
+set :ssh_options, forward_agent: true
 
 namespace :deploy do
-
   task :precompile do
     on roles(:app) do
       within release_path do
         with rack_env: fetch(:rack_env) do
-          execute :rake, "assets:precompile"
+          execute :rake, 'assets:precompile'
         end
       end
     end
