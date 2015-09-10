@@ -5,6 +5,7 @@ require 'bundler/setup'
 Bundler.require(:default)
 
 # Libraries
+require './lib/deep_struct'
 require './lib/helpers'
 require './lib/loader'
 
