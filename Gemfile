@@ -18,6 +18,7 @@ group :development do
   gem 'capistrano-bundler', '~> 1.1'
   gem 'capistrano-rails'
   gem 'pry'
+  gem 'foreman'
 end
 
 group :development, :test do

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source script/bootstrap
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+PARENT=$( cd "$( dirname "${DIR}/../../" )" && pwd )
+cd $PARENT; foreman start
