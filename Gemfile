@@ -10,11 +10,16 @@ gem 'sinatra-asset-pipeline', :require => 'sinatra/asset_pipeline'
 
 # Assets
 gem 'neat'
-gem 'sass', '< 3.3.0'
+gem 'sass'
 gem 'uglifier'
 
 group :development do
   gem 'capistrano', '~> 3.1'
   gem 'capistrano-bundler', '~> 1.1'
   gem 'capistrano-rails'
+  gem 'pry'
+end
+
+group :development, :test do
+  gem 'rubocop'
 end
